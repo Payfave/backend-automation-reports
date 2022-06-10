@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1654877576933,
+  "startTime": 1654878086722,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654877604730,
-        "runtime": 27721,
+        "end": 1654878120280,
+        "runtime": 33485,
         "slow": true,
-        "start": 1654877577009
+        "start": 1654878086795
       },
       "skipped": false,
       "snapshot": {
@@ -60,7 +60,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 63,
+          "duration": 49,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face and audio correctly.",
@@ -77,7 +77,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 3232,
+          "duration": 3078,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face only correctly.",
@@ -94,8 +94,14 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 5468,
+          "duration": 10393,
           "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "expect(received).not.toMatchObject(expected)\n\nExpected: not {\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}",
+                "pass": true
+              }
+            },
             {
               "matcherResult": {
                 "expected": "voice_result",
@@ -106,6 +112,7 @@
             }
           ],
           "failureMessages": [
+            "Error: expect(received).not.toMatchObject(expected)\n\nExpected: not {\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}\n    at expectNotUnknownServerError (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:2:24)\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:61:56\n    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
             "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"voice_result\"\nReceived: undefined\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:126:52\n    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
           ],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.",
@@ -122,7 +129,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
           ],
-          "duration": 6320,
+          "duration": 6859,
           "failureDetails": [
             {
               "matcherResult": {
@@ -150,7 +157,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
           ],
-          "duration": 5543,
+          "duration": 5673,
           "failureDetails": [
             {
               "matcherResult": {
@@ -178,7 +185,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 1346,
+          "duration": 1547,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -195,7 +202,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
           ],
-          "duration": 1334,
+          "duration": 1487,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -212,7 +219,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
           ],
-          "duration": 1262,
+          "duration": 1435,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -224,7 +231,7 @@
           "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
         }
       ],
-      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"voice_result\"\n    Received: undefined\n\n      124 |                         expectNotNoVoiceDataMsg(actual);\n      125 |                         expect(actual.recognition_event_uuid).not.toBeNull();\n    > 126 |                         expect(actual.result_type).toBe('voice_result');\n          |                                                    ^\n      127 |                         expect(actual.result_data).not.toBeNull();\n      128 |                     })\n      129 |                     .expectJson((actual: any) => {\n\n      at src/ws/winktoken.route.spec.ts:126:52\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n\n  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true › Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"voice_result\"\n    Received: undefined\n\n      173 |                             expectNotNoVoiceDataMsg(actual);\n      174 |                             expect(actual.recognition_event_uuid).not.toBeNull();\n    > 175 |                             expect(actual.result_type).toBe('voice_result');\n          |                                                        ^\n      176 |                             expect(actual.result_data).not.toBeNull();\n      177 |                         })\n      178 |                         .expectJson((actual: any) => {\n\n      at src/ws/winktoken.route.spec.ts:175:56\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n\n  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false › Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"end_session\"\n    Received: undefined\n\n      204 |                     })\n      205 |                     .expectJson((actual: any) => {\n    > 206 |                         expect(actual.action).toBe('end_session');\n          |                                               ^\n      207 |                         expect(actual.status).toBe('success');\n      208 |                     })\n      209 |                     .expectJson({ type: 10 })\n\n      at src/ws/winktoken.route.spec.ts:206:47\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n"
+      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).not.toMatchObject(expected)\n\n    Expected: not {\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}\n\n      1 | const expectNotUnknownServerError = (actual: any) => {\n    > 2 |     expect(actual).not.toMatchObject({\n        |                        ^\n      3 |         errorSymbio: 'We detected an error in Symbio:  - Unknown server error'\n      4 |     });\n      5 | };\n\n      at expectNotUnknownServerError (src/utils/symbioVerifications.ts:2:24)\n      at src/ws/winktoken.route.spec.ts:61:56\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n\n  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"voice_result\"\n    Received: undefined\n\n      124 |                         expectNotNoVoiceDataMsg(actual);\n      125 |                         expect(actual.recognition_event_uuid).not.toBeNull();\n    > 126 |                         expect(actual.result_type).toBe('voice_result');\n          |                                                    ^\n      127 |                         expect(actual.result_data).not.toBeNull();\n      128 |                     })\n      129 |                     .expectJson((actual: any) => {\n\n      at src/ws/winktoken.route.spec.ts:126:52\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n\n  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true › Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"voice_result\"\n    Received: undefined\n\n      173 |                             expectNotNoVoiceDataMsg(actual);\n      174 |                             expect(actual.recognition_event_uuid).not.toBeNull();\n    > 175 |                             expect(actual.result_type).toBe('voice_result');\n          |                                                        ^\n      176 |                             expect(actual.result_data).not.toBeNull();\n      177 |                         })\n      178 |                         .expectJson((actual: any) => {\n\n      at src/ws/winktoken.route.spec.ts:175:56\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n\n  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false › Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"end_session\"\n    Received: undefined\n\n      204 |                     })\n      205 |                     .expectJson((actual: any) => {\n    > 206 |                         expect(actual.action).toBe('end_session');\n          |                                               ^\n      207 |                         expect(actual.status).toBe('success');\n      208 |                     })\n      209 |                     .expectJson({ type: 10 })\n\n      at src/ws/winktoken.route.spec.ts:206:47\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n"
     },
     {
       "leaks": false,
@@ -234,10 +241,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654877606026,
-        "runtime": 1282,
+        "end": 1654878122220,
+        "runtime": 1923,
         "slow": false,
-        "start": 1654877604744
+        "start": 1654878120297
       },
       "skipped": false,
       "snapshot": {
@@ -257,7 +264,7 @@
             "Positive Test Cases",
             "GET /User?FaceId={FaceId}"
           ],
-          "duration": 30,
+          "duration": 28,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Positive Test Cases GET /User?FaceId={FaceId} Should return valid data after sending valid Face IDs.",
@@ -274,7 +281,7 @@
             "Negative Test Cases",
             "GET /User?FaceId=1"
           ],
-          "duration": 117,
+          "duration": 239,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Negative Test Cases GET /User?FaceId=1 Should return no data found after sending invalid Face ID.",
@@ -296,10 +303,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654877606408,
-        "runtime": 376,
+        "end": 1654878122643,
+        "runtime": 418,
         "slow": false,
-        "start": 1654877606032
+        "start": 1654878122225
       },
       "skipped": false,
       "snapshot": {
@@ -319,7 +326,7 @@
             "Negative Test Cases",
             "GET /Shipping?visitorId=1"
           ],
-          "duration": 123,
+          "duration": 172,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /Shipping Negative Test Cases GET /Shipping?visitorId=1 Should return no data found after sending invalid FaceId.",
