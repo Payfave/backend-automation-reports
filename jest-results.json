@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1654876301437,
+  "startTime": 1654877576933,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654876329512,
-        "runtime": 28015,
+        "end": 1654877604730,
+        "runtime": 27721,
         "slow": true,
-        "start": 1654876301497
+        "start": 1654877577009
       },
       "skipped": false,
       "snapshot": {
@@ -60,7 +60,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 52,
+          "duration": 63,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face and audio correctly.",
@@ -77,7 +77,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 3022,
+          "duration": 3232,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face only correctly.",
@@ -94,7 +94,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 5819,
+          "duration": 5468,
           "failureDetails": [
             {
               "matcherResult": {
@@ -122,7 +122,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
           ],
-          "duration": 6683,
+          "duration": 6320,
           "failureDetails": [
             {
               "matcherResult": {
@@ -150,7 +150,7 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
           ],
-          "duration": 5649,
+          "duration": 5543,
           "failureDetails": [
             {
               "matcherResult": {
@@ -178,7 +178,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 1416,
+          "duration": 1346,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -195,7 +195,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
           ],
-          "duration": 1349,
+          "duration": 1334,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -212,7 +212,7 @@
             "Negative Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
           ],
-          "duration": 1388,
+          "duration": 1262,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
@@ -234,10 +234,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654876331233,
-        "runtime": 1703,
+        "end": 1654877606026,
+        "runtime": 1282,
         "slow": false,
-        "start": 1654876329530
+        "start": 1654877604744
       },
       "skipped": false,
       "snapshot": {
@@ -257,7 +257,7 @@
             "Positive Test Cases",
             "GET /User?FaceId={FaceId}"
           ],
-          "duration": 26,
+          "duration": 30,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Positive Test Cases GET /User?FaceId={FaceId} Should return valid data after sending valid Face IDs.",
@@ -274,7 +274,7 @@
             "Negative Test Cases",
             "GET /User?FaceId=1"
           ],
-          "duration": 264,
+          "duration": 117,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Negative Test Cases GET /User?FaceId=1 Should return no data found after sending invalid Face ID.",
@@ -296,10 +296,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1654876331597,
-        "runtime": 358,
+        "end": 1654877606408,
+        "runtime": 376,
         "slow": false,
-        "start": 1654876331239
+        "start": 1654877606032
       },
       "skipped": false,
       "snapshot": {
@@ -319,7 +319,7 @@
             "Negative Test Cases",
             "GET /Shipping?visitorId=1"
           ],
-          "duration": 149,
+          "duration": 123,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /Shipping Negative Test Cases GET /Shipping?visitorId=1 Should return no data found after sending invalid FaceId.",
