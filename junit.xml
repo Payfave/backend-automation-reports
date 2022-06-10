@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Tests" tests="5" failures="0" errors="0" time="15.1">
+  <testsuite name="src/user.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-06-07T15:35:15" time="7.706" tests="2">
+    <testcase classname="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." name="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." time="0.026">
+    </testcase>
+    <testcase classname="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." name="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." time="2.324">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/ws/winktoken.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-06-07T15:35:23" time="6.282" tests="2">
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." time="0.029">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." time="6.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/shipping.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-06-07T15:35:29" time="1.009" tests="1">
+    <testcase classname="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." name="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." time="0.856">
+    </testcase>
+  </testsuite>
+</testsuites>

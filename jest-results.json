@@ -1,0 +1,238 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 3,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 5,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 8,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1654798965735,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 3,
+      "numPassingTests": 5,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1654799007147,
+        "runtime": 41321,
+        "slow": true,
+        "start": 1654798965826
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/ws/winktoken.route.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Positive Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
+          ],
+          "duration": 40,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face and audio correctly.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Should return type 0 after sending face and audio correctly."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Positive Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
+          ],
+          "duration": 6830,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 0 after sending face only correctly.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Should return type 0 after sending face only correctly."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Positive Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
+          ],
+          "duration": 8050,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: not \u001b[32m{\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}\u001b[39m",
+                "pass": true
+              }
+            },
+            {
+              "matcherResult": {
+                "expected": "voice_result",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"voice_result\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: not \u001b[32m{\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}\u001b[39m\n    at expectNotUnknownServerError (/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/utils/symbioVerifications.ts:2:24)\n    at /home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/ws/winktoken.route.spec.ts:61:56\n    at Object.expectMessage (/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"voice_result\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at /home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/ws/winktoken.route.spec.ts:126:52\n    at Object.expectMessage (/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+          ],
+          "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Positive Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
+          ],
+          "duration": 11339,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "expected": "voice_result",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"voice_result\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"voice_result\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at /home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/ws/winktoken.route.spec.ts:175:56\n    at Object.expectMessage (/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+          ],
+          "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Positive Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
+          ],
+          "duration": 7152,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "expected": "end_session",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"end_session\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"end_session\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at /home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/src/ws/winktoken.route.spec.ts:206:47\n    at Object.expectMessage (/home/mmagni/dev/globaltask/payfave/wvmp-backend-automation/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+          ],
+          "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Negative Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
+          ],
+          "duration": 2406,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Negative Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true"
+          ],
+          "duration": 2021,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
+        },
+        {
+          "ancestorTitles": [
+            "Route /ws_winktoken",
+            "Negative Test Cases",
+            "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false"
+          ],
+          "duration": 2076,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Route /ws_winktoken Negative Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false Should return \"Failure to read video file.\" error message after sending invalid face and audio data.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRoute /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: not \u001b[32m{\"errorSymbio\": \"We detected an error in Symbio:  - Unknown server error\"}\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mconst\u001b[39m expectNotUnknownServerError \u001b[33m=\u001b[39m (actual\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 2 |\u001b[39m     expect(actual)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoMatchObject({\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 3 |\u001b[39m         errorSymbio\u001b[33m:\u001b[39m \u001b[32m'We detected an error in Symbio:  - Unknown server error'\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 4 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 5 |\u001b[39m }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat expectNotUnknownServerError (\u001b[22m\u001b[2msrc/utils/symbioVerifications.ts\u001b[2m:2:24)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/ws/winktoken.route.spec.ts\u001b[39m\u001b[0m\u001b[2m:61:56\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.expectMessage (\u001b[22m\u001b[2mnode_modules/superwstest/build/superwstest.js\u001b[2m:169:22)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRoute /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"voice_result\"\u001b[39m\n    Received: \u001b[31mundefined\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 124 |\u001b[39m                         expectNotNoVoiceDataMsg(actual)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 125 |\u001b[39m                         expect(actual\u001b[33m.\u001b[39mrecognition_event_uuid)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 126 |\u001b[39m                         expect(actual\u001b[33m.\u001b[39mresult_type)\u001b[33m.\u001b[39mtoBe(\u001b[32m'voice_result'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 127 |\u001b[39m                         expect(actual\u001b[33m.\u001b[39mresult_data)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 128 |\u001b[39m                     })\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 129 |\u001b[39m                     \u001b[33m.\u001b[39mexpectJson((actual\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/ws/winktoken.route.spec.ts\u001b[39m\u001b[0m\u001b[2m:126:52\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.expectMessage (\u001b[22m\u001b[2mnode_modules/superwstest/build/superwstest.js\u001b[2m:169:22)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRoute /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true › Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"voice_result\"\u001b[39m\n    Received: \u001b[31mundefined\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 173 |\u001b[39m                             expectNotNoVoiceDataMsg(actual)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 174 |\u001b[39m                             expect(actual\u001b[33m.\u001b[39mrecognition_event_uuid)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 175 |\u001b[39m                             expect(actual\u001b[33m.\u001b[39mresult_type)\u001b[33m.\u001b[39mtoBe(\u001b[32m'voice_result'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 176 |\u001b[39m                             expect(actual\u001b[33m.\u001b[39mresult_data)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 177 |\u001b[39m                         })\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 178 |\u001b[39m                         \u001b[33m.\u001b[39mexpectJson((actual\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/ws/winktoken.route.spec.ts\u001b[39m\u001b[0m\u001b[2m:175:56\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.expectMessage (\u001b[22m\u001b[2mnode_modules/superwstest/build/superwstest.js\u001b[2m:169:22)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRoute /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false › Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"end_session\"\u001b[39m\n    Received: \u001b[31mundefined\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 204 |\u001b[39m                     })\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 205 |\u001b[39m                     \u001b[33m.\u001b[39mexpectJson((actual\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 206 |\u001b[39m                         expect(actual\u001b[33m.\u001b[39maction)\u001b[33m.\u001b[39mtoBe(\u001b[32m'end_session'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 207 |\u001b[39m                         expect(actual\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[32m'success'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 208 |\u001b[39m                     })\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 209 |\u001b[39m                     \u001b[33m.\u001b[39mexpectJson({ type\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m })\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/ws/winktoken.route.spec.ts\u001b[39m\u001b[0m\u001b[2m:206:47\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.expectMessage (\u001b[22m\u001b[2mnode_modules/superwstest/build/superwstest.js\u001b[2m:169:22)\u001b[22m\u001b[2m\u001b[22m\n"
+    }
+  ],
+  "wasInterrupted": false
+}
