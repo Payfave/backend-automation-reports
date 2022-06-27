@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">2 passed, 3 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">3 passed, 3 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">10 passed, 11 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">6 passed, 16 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -125,16 +125,16 @@
 }</div>
         <div id="accordion">
             <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 1,
-  &quot;numFailedTests&quot;: 1,
-  &quot;numPassedTestSuites&quot;: 2,
-  &quot;numPassedTests&quot;: 10,
+  &quot;numFailedTestSuites&quot;: 0,
+  &quot;numFailedTests&quot;: 0,
+  &quot;numPassedTestSuites&quot;: 3,
+  &quot;numPassedTests&quot;: 6,
   &quot;numPendingTestSuites&quot;: 0,
-  &quot;numPendingTests&quot;: 0,
+  &quot;numPendingTests&quot;: 10,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 3,
-  &quot;numTotalTests&quot;: 11,
+  &quot;numTotalTests&quot;: 16,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -152,21 +152,21 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1655393446613,
-  &quot;success&quot;: false,
+  &quot;startTime&quot;: 1656340294456,
+  &quot;success&quot;: true,
   &quot;testResults&quot;: [
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 7,
-      &quot;numPendingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 3,
+      &quot;numPendingTests&quot;: 10,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1655393496855,
-        &quot;runtime&quot;: 50182,
+        &quot;end&quot;: 1656340336761,
+        &quot;runtime&quot;: 42226,
         &quot;slow&quot;: true,
-        &quot;start&quot;: 1655393446673
+        &quot;start&quot;: 1656340294535
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -186,7 +186,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 47,
+          &quot;duration&quot;: null,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 0 after sending face and audio correctly.&quot;,
@@ -194,7 +194,7 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return type 0 after sending face and audio correctly.&quot;
         },
         {
@@ -203,7 +203,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 3088,
+          &quot;duration&quot;: null,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 0 after sending face only correctly.&quot;,
@@ -211,7 +211,7 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return type 0 after sending face only correctly.&quot;
         },
         {
@@ -220,7 +220,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 13626,
+          &quot;duration&quot;: null,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.&quot;,
@@ -228,8 +228,42 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Positive Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: null,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 10 after sending face and audio with quality less than 0.5 and no device.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;pending&quot;,
+          &quot;title&quot;: &quot;Should return type 10 after sending face and audio with quality less than 0.5 and no device.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Positive Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: null,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;pending&quot;,
+          &quot;title&quot;: &quot;Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device.&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
@@ -237,7 +271,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 13735,
+          &quot;duration&quot;: null,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.&quot;,
@@ -245,7 +279,7 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.&quot;
         },
         {
@@ -254,26 +288,15 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
           ],
-          &quot;duration&quot;: 13254,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;expected&quot;: &quot;end_session&quot;,
-                &quot;message&quot;: &quot;expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;end_session\&quot;\nReceived: undefined&quot;,
-                &quot;name&quot;: &quot;toBe&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;end_session\&quot;\nReceived: undefined\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;ws&#x2F;winktoken.route.spec.ts:206:47\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
-          ],
+          &quot;duration&quot;: null,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.&quot;
         },
         {
@@ -282,7 +305,7 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 1288,
+          &quot;duration&quot;: null,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
@@ -290,7 +313,41 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;pending&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: 18178,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: null,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
         },
         {
@@ -299,15 +356,32 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 1282,
+          &quot;duration&quot;: 17974,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
+          ],
+          &quot;duration&quot;: null,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;pending&quot;,
           &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
         },
         {
@@ -316,19 +390,26 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
           ],
-          &quot;duration&quot;: 1366,
+          &quot;duration&quot;: 2665,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
+          &quot;title&quot;: &quot;Should return \&quot;Face enroll error\&quot; message after sending face and audio data with non optimal face position.&quot;
         }
       ],
-      &quot;failureMessage&quot;: &quot;  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false › Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.\n\n    expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\n    Expected: \&quot;end_session\&quot;\n    Received: undefined\n\n      204 |                     })\n      205 |                     .expectJson((actual: any) &#x3D;&gt; {\n    &gt; 206 |                         expect(actual.action).toBe(&#39;end_session&#39;);\n          |                                               ^\n      207 |                         expect(actual.status).toBe(&#39;success&#39;);\n      208 |                     })\n      209 |                     .expectJson({ type: 10 })\n\n      at src&#x2F;ws&#x2F;winktoken.route.spec.ts:206:47\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n&quot;
+      &quot;console&quot;: [
+        {
+          &quot;message&quot;: &quot;ACTUAL: face enroll error&quot;,
+          &quot;origin&quot;: &quot;    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;ws&#x2F;winktoken.route.spec.ts:311:37\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
+          &quot;type&quot;: &quot;log&quot;
+        }
+      ],
+      &quot;failureMessage&quot;: null
     },
     {
       &quot;leaks&quot;: false,
@@ -338,10 +419,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1655393499160,
-        &quot;runtime&quot;: 2289,
+        &quot;end&quot;: 1656340339216,
+        &quot;runtime&quot;: 2419,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1655393496871
+        &quot;start&quot;: 1656340336797
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -361,7 +442,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;GET &#x2F;User?FaceId&#x3D;{FaceId}&quot;
           ],
-          &quot;duration&quot;: 22,
+          &quot;duration&quot;: 30,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;User Positive Test Cases GET &#x2F;User?FaceId&#x3D;{FaceId} Should return valid data after sending valid Face IDs.&quot;,
@@ -378,7 +459,7 @@
             &quot;Negative Test Cases&quot;,
             &quot;GET &#x2F;User?FaceId&#x3D;1&quot;
           ],
-          &quot;duration&quot;: 1354,
+          &quot;duration&quot;: 319,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;User Negative Test Cases GET &#x2F;User?FaceId&#x3D;1 Should return no data found after sending invalid Face ID.&quot;,
@@ -400,10 +481,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1655393499471,
-        &quot;runtime&quot;: 303,
+        &quot;end&quot;: 1656340339759,
+        &quot;runtime&quot;: 532,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1655393499168
+        &quot;start&quot;: 1656340339227
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -423,7 +504,7 @@
             &quot;Negative Test Cases&quot;,
             &quot;GET &#x2F;Shipping?visitorId&#x3D;1&quot;
           ],
-          &quot;duration&quot;: 114,
+          &quot;duration&quot;: 270,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;Shipping Negative Test Cases GET &#x2F;Shipping?visitorId&#x3D;1 Should return no data found after sending invalid FaceId.&quot;,
