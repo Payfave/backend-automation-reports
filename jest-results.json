@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1656357239663,
+  "startTime": 1656519129426,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656357250697,
-        "runtime": 10962,
+        "end": 1656519172179,
+        "runtime": 42692,
         "slow": true,
-        "start": 1656357239735
+        "start": 1656519129487
       },
       "skipped": false,
       "snapshot": {
@@ -111,19 +111,14 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 7914,
+          "duration": 40003,
           "failureDetails": [
             {
-              "matcherResult": {
-                "expected": "voice_result",
-                "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"voice_result\"\nReceived: undefined",
-                "name": "toBe",
-                "pass": false
-              }
+              "message": "thrown: \"Exceeded timeout of 40000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\""
             }
           ],
           "failureMessages": [
-            "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"voice_result\"\nReceived: undefined\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:166:52\n    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+            "Error: thrown: \"Exceeded timeout of 40000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\"\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:148:16\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:55:9\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:54:5\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at Object.<anonymous> (/home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:17:1)"
           ],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 10 after sending face and audio with quality less than 0.5 and no device.",
           "invocations": 1,
@@ -236,7 +231,7 @@
           "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
         }
       ],
-      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"voice_result\"\n    Received: undefined\n\n      164 |                     .expectJson((actual: any) => {\n      165 |                         expect(actual.recognition_event_uuid).not.toBeNull();\n    > 166 |                         expect(actual.result_type).toBe('voice_result');\n          |                                                    ^\n      167 |                         expect(actual.result_data).not.toBeNull();\n      168 |                     })\n      169 |                     .expectJson((actual: any) => {\n\n      at src/ws/winktoken.route.spec.ts:166:52\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n"
+      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    thrown: \"Exceeded timeout of 40000 ms for a test.\n    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\"\n\n      146 |             });\n      147 |\n    > 148 |             it.only('Should return type 10 after sending face and audio with quality less than 0.5 and no device.', async () => {\n          |                ^\n      149 |                 await deleteUserDeviceWithVisitorId(VISITOR_ID);\n      150 |\n      151 |                 await request(baseWebSocketUrl)\n\n      at src/ws/winktoken.route.spec.ts:148:16\n      at src/ws/winktoken.route.spec.ts:55:9\n      at src/ws/winktoken.route.spec.ts:54:5\n      at Object.<anonymous> (src/ws/winktoken.route.spec.ts:17:1)\n"
     },
     {
       "leaks": false,
@@ -246,10 +241,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656357254136,
-        "runtime": 3428,
+        "end": 1656519173370,
+        "runtime": 1175,
         "slow": false,
-        "start": 1656357250708
+        "start": 1656519172195
       },
       "skipped": false,
       "snapshot": {
@@ -269,7 +264,7 @@
             "Positive Test Cases",
             "GET /User?FaceId={FaceId}"
           ],
-          "duration": 27,
+          "duration": 15,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Positive Test Cases GET /User?FaceId={FaceId} Should return valid data after sending valid Face IDs.",
@@ -286,7 +281,7 @@
             "Negative Test Cases",
             "GET /User?FaceId=1"
           ],
-          "duration": 1545,
+          "duration": 167,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Negative Test Cases GET /User?FaceId=1 Should return no data found after sending invalid Face ID.",
@@ -308,10 +303,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656357254659,
-        "runtime": 517,
+        "end": 1656519173660,
+        "runtime": 283,
         "slow": false,
-        "start": 1656357254142
+        "start": 1656519173377
       },
       "skipped": false,
       "snapshot": {
@@ -331,7 +326,7 @@
             "Negative Test Cases",
             "GET /Shipping?visitorId=1"
           ],
-          "duration": 283,
+          "duration": 73,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /Shipping Negative Test Cases GET /Shipping?visitorId=1 Should return no data found after sending invalid FaceId.",
