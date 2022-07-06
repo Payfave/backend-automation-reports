@@ -1,8 +1,8 @@
 {
-  "numFailedTestSuites": 1,
-  "numFailedTests": 1,
-  "numPassedTestSuites": 2,
-  "numPassedTests": 3,
+  "numFailedTestSuites": 3,
+  "numFailedTests": 3,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 1,
   "numPendingTestSuites": 0,
   "numPendingTests": 9,
   "numRuntimeErrorTestSuites": 0,
@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1656519129426,
+  "startTime": 1657134226792,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656519172179,
-        "runtime": 42692,
+        "end": 1657134241005,
+        "runtime": 14140,
         "slow": true,
-        "start": 1656519129487
+        "start": 1657134226865
       },
       "skipped": false,
       "snapshot": {
@@ -111,14 +111,19 @@
             "Positive Test Cases",
             "WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true"
           ],
-          "duration": 40003,
+          "duration": 10857,
           "failureDetails": [
             {
-              "message": "thrown: \"Exceeded timeout of 40000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\""
+              "matcherResult": {
+                "expected": "end_session",
+                "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"end_session\"\nReceived: undefined",
+                "name": "toBe",
+                "pass": false
+              }
             }
           ],
           "failureMessages": [
-            "Error: thrown: \"Exceeded timeout of 40000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\"\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:148:16\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:55:9\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:54:5\n    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)\n    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)\n    at Object.<anonymous> (/home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:17:1)"
+            "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"end_session\"\nReceived: undefined\n    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:170:47\n    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
           ],
           "fullName": "Route /ws_winktoken Positive Test Cases WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true Should return type 10 after sending face and audio with quality less than 0.5 and no device.",
           "invocations": 1,
@@ -231,20 +236,20 @@
           "title": "Should return \"Failure to read video file.\" error message after sending invalid face and audio data."
         }
       ],
-      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    thrown: \"Exceeded timeout of 40000 ms for a test.\n    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.\"\n\n      146 |             });\n      147 |\n    > 148 |             it.only('Should return type 10 after sending face and audio with quality less than 0.5 and no device.', async () => {\n          |                ^\n      149 |                 await deleteUserDeviceWithVisitorId(VISITOR_ID);\n      150 |\n      151 |                 await request(baseWebSocketUrl)\n\n      at src/ws/winktoken.route.spec.ts:148:16\n      at src/ws/winktoken.route.spec.ts:55:9\n      at src/ws/winktoken.route.spec.ts:54:5\n      at Object.<anonymous> (src/ws/winktoken.route.spec.ts:17:1)\n"
+      "failureMessage": "  ● Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \"end_session\"\n    Received: undefined\n\n      168 |                     })\n      169 |                     .expectJson((actual: any) => {\n    > 170 |                         expect(actual.action).toBe('end_session');\n          |                                               ^\n      171 |                         expect(actual.status).toBe('success');\n      172 |                     })\n      173 |                     .expectJson({ type: 3 })\n\n      at src/ws/winktoken.route.spec.ts:170:47\n      at Object.expectMessage (node_modules/superwstest/build/superwstest.js:169:22)\n"
     },
     {
       "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 2,
+      "numFailingTests": 1,
+      "numPassingTests": 1,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656519173370,
-        "runtime": 1175,
+        "end": 1657134243130,
+        "runtime": 2113,
         "slow": false,
-        "start": 1656519172195
+        "start": 1657134241017
       },
       "skipped": false,
       "snapshot": {
@@ -264,7 +269,7 @@
             "Positive Test Cases",
             "GET /User?FaceId={FaceId}"
           ],
-          "duration": 15,
+          "duration": 35,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Route /User Positive Test Cases GET /User?FaceId={FaceId} Should return valid data after sending valid Face IDs.",
@@ -281,32 +286,335 @@
             "Negative Test Cases",
             "GET /User?FaceId=1"
           ],
-          "duration": 167,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 304,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 218,
+                    "firstName": "Franco",
+                    "lastName": "Soler",
+                    "voiceId": "1782",
+                    "faceId": "1782",
+                    "token": null,
+                    "contactNo": "(123) 123-1233",
+                    "email": "francosoler@email.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 218,
+                    "firstName": "Franco",
+                    "lastName": "Soler",
+                    "voiceId": "1782",
+                    "faceId": "1782",
+                    "token": null,
+                    "contactNo": "(123) 123-1233",
+                    "email": "francosoler@email.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1782\",\n      \"firstName\": \"Franco\",\n      \"lastName\": \"Soler\",\n      \"token\": null,\n      \"userId\": 218,\n+     \"visitorId\": null,\n      \"voiceId\": \"1782\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 235,
+                    "firstName": "Leonarro",
+                    "lastName": "Reyes",
+                    "voiceId": "",
+                    "faceId": "1975",
+                    "token": null,
+                    "contactNo": "(121) 212-1212",
+                    "email": "123@gmail.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 235,
+                    "firstName": "Leonarro",
+                    "lastName": "Reyes",
+                    "voiceId": "",
+                    "faceId": "1975",
+                    "token": null,
+                    "contactNo": "(121) 212-1212",
+                    "email": "123@gmail.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1975\",\n      \"firstName\": \"Leonarro\",\n      \"lastName\": \"Reyes\",\n      \"token\": null,\n      \"userId\": 235,\n+     \"visitorId\": null,\n      \"voiceId\": \"\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 223,
+                    "firstName": "Matias",
+                    "lastName": "Magni",
+                    "voiceId": "1795",
+                    "faceId": "1795",
+                    "token": null,
+                    "contactNo": "(261) 253-5890",
+                    "email": "matias+test@wink.cloud",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 223,
+                    "firstName": "Matias",
+                    "lastName": "Magni",
+                    "voiceId": "1795",
+                    "faceId": "1795",
+                    "token": null,
+                    "contactNo": "(261) 253-5890",
+                    "email": "matias+test@wink.cloud"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1795\",\n      \"firstName\": \"Matias\",\n      \"lastName\": \"Magni\",\n      \"token\": null,\n      \"userId\": 223,\n+     \"visitorId\": null,\n      \"voiceId\": \"1795\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 220,
+                    "firstName": "Leo",
+                    "lastName": "NArdo",
+                    "voiceId": "1786",
+                    "faceId": "1786",
+                    "token": null,
+                    "contactNo": "(121) 212-1212",
+                    "email": "leo@reyes.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 220,
+                    "firstName": "Leo",
+                    "lastName": "NArdo",
+                    "voiceId": "1786",
+                    "faceId": "1786",
+                    "token": null,
+                    "contactNo": "(121) 212-1212",
+                    "email": "leo@reyes.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1786\",\n      \"firstName\": \"Leo\",\n      \"lastName\": \"NArdo\",\n      \"token\": null,\n      \"userId\": 220,\n+     \"visitorId\": null,\n      \"voiceId\": \"1786\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 233,
+                    "firstName": "Vrunda",
+                    "lastName": "Patel",
+                    "voiceId": "1949",
+                    "faceId": "1949",
+                    "token": null,
+                    "contactNo": "(887) 378-3838",
+                    "email": "Vrunda@gmail.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 233,
+                    "firstName": "Vrunda",
+                    "lastName": "Patel",
+                    "voiceId": "1949",
+                    "faceId": "1949",
+                    "token": null,
+                    "contactNo": "(887) 378-3838",
+                    "email": "Vrunda@gmail.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1949\",\n      \"firstName\": \"Vrunda\",\n      \"lastName\": \"Patel\",\n      \"token\": null,\n      \"userId\": 233,\n+     \"visitorId\": null,\n      \"voiceId\": \"1949\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 230,
+                    "firstName": "V",
+                    "lastName": "J",
+                    "voiceId": "1946",
+                    "faceId": "1946",
+                    "token": null,
+                    "contactNo": "(988) 737-3883",
+                    "email": "V@gmail.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 230,
+                    "firstName": "V",
+                    "lastName": "J",
+                    "voiceId": "1946",
+                    "faceId": "1946",
+                    "token": null,
+                    "contactNo": "(988) 737-3883",
+                    "email": "V@gmail.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1946\",\n      \"firstName\": \"V\",\n      \"lastName\": \"J\",\n      \"token\": null,\n      \"userId\": 230,\n+     \"visitorId\": null,\n      \"voiceId\": \"1946\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 216,
+                    "firstName": "Geeta ",
+                    "lastName": "Gupta",
+                    "voiceId": "1771",
+                    "faceId": "1771",
+                    "token": null,
+                    "contactNo": "(981) 073-955",
+                    "email": "geeta3011@gmail.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 216,
+                    "firstName": "Geeta ",
+                    "lastName": "Gupta",
+                    "voiceId": "1771",
+                    "faceId": "1771",
+                    "token": null,
+                    "contactNo": "(981) 073-955",
+                    "email": "geeta3011@gmail.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1771\",\n      \"firstName\": \"Geeta \",\n      \"lastName\": \"Gupta\",\n      \"token\": null,\n      \"userId\": 216,\n+     \"visitorId\": null,\n      \"voiceId\": \"1771\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1782\",\n      \"firstName\": \"Franco\",\n      \"lastName\": \"Soler\",\n      \"token\": null,\n      \"userId\": 218,\n+     \"visitorId\": null,\n      \"voiceId\": \"1782\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1975\",\n      \"firstName\": \"Leonarro\",\n      \"lastName\": \"Reyes\",\n      \"token\": null,\n      \"userId\": 235,\n+     \"visitorId\": null,\n      \"voiceId\": \"\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1795\",\n      \"firstName\": \"Matias\",\n      \"lastName\": \"Magni\",\n      \"token\": null,\n      \"userId\": 223,\n+     \"visitorId\": null,\n      \"voiceId\": \"1795\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1786\",\n      \"firstName\": \"Leo\",\n      \"lastName\": \"NArdo\",\n      \"token\": null,\n      \"userId\": 220,\n+     \"visitorId\": null,\n      \"voiceId\": \"1786\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1949\",\n      \"firstName\": \"Vrunda\",\n      \"lastName\": \"Patel\",\n      \"token\": null,\n      \"userId\": 233,\n+     \"visitorId\": null,\n      \"voiceId\": \"1949\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1946\",\n      \"firstName\": \"V\",\n      \"lastName\": \"J\",\n      \"token\": null,\n      \"userId\": 230,\n+     \"visitorId\": null,\n      \"voiceId\": \"1946\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1771\",\n      \"firstName\": \"Geeta \",\n      \"lastName\": \"Gupta\",\n      \"token\": null,\n      \"userId\": 216,\n+     \"visitorId\": null,\n      \"voiceId\": \"1771\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+          ],
           "fullName": "Route /User Negative Test Cases GET /User?FaceId=1 Should return no data found after sending invalid Face ID.",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Should return no data found after sending invalid Face ID."
         }
       ],
-      "failureMessage": null
+      "failureMessage": "  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1782\",\n          \"firstName\": \"Franco\",\n          \"lastName\": \"Soler\",\n          \"token\": null,\n          \"userId\": 218,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1782\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1975\",\n          \"firstName\": \"Leonarro\",\n          \"lastName\": \"Reyes\",\n          \"token\": null,\n          \"userId\": 235,\n    +     \"visitorId\": null,\n          \"voiceId\": \"\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1795\",\n          \"firstName\": \"Matias\",\n          \"lastName\": \"Magni\",\n          \"token\": null,\n          \"userId\": 223,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1795\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1786\",\n          \"firstName\": \"Leo\",\n          \"lastName\": \"NArdo\",\n          \"token\": null,\n          \"userId\": 220,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1786\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1949\",\n          \"firstName\": \"Vrunda\",\n          \"lastName\": \"Patel\",\n          \"token\": null,\n          \"userId\": 233,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1949\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1946\",\n          \"firstName\": \"V\",\n          \"lastName\": \"J\",\n          \"token\": null,\n          \"userId\": 230,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1946\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /User › Negative Test Cases › GET /User?FaceId=1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1771\",\n          \"firstName\": \"Geeta \",\n          \"lastName\": \"Gupta\",\n          \"token\": null,\n          \"userId\": 216,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1771\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n"
     },
     {
       "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
+      "numFailingTests": 1,
+      "numPassingTests": 0,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1656519173660,
-        "runtime": 283,
+        "end": 1657134243588,
+        "runtime": 452,
         "slow": false,
-        "start": 1656519173377
+        "start": 1657134243136
       },
       "skipped": false,
       "snapshot": {
@@ -326,19 +634,150 @@
             "Negative Test Cases",
             "GET /Shipping?visitorId=1"
           ],
-          "duration": 73,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 178,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 221,
+                    "firstName": "sd",
+                    "lastName": "sd",
+                    "voiceId": "1792",
+                    "faceId": "1792",
+                    "token": null,
+                    "contactNo": "(121) 212-12",
+                    "email": "sd@sas.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 221,
+                    "firstName": "sd",
+                    "lastName": "sd",
+                    "voiceId": "1792",
+                    "faceId": "1792",
+                    "token": null,
+                    "contactNo": "(121) 212-12",
+                    "email": "sd@sas.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1792\",\n      \"firstName\": \"sd\",\n      \"lastName\": \"sd\",\n      \"token\": null,\n      \"userId\": 221,\n+     \"visitorId\": null,\n      \"voiceId\": \"1792\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 229,
+                    "firstName": "Vandana",
+                    "lastName": "Jaguri",
+                    "voiceId": "1945",
+                    "faceId": "1945",
+                    "token": null,
+                    "contactNo": "(989) 821-0532",
+                    "email": "Vandana@payfave.io",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 229,
+                    "firstName": "Vandana",
+                    "lastName": "Jaguri",
+                    "voiceId": "1945",
+                    "faceId": "1945",
+                    "token": null,
+                    "contactNo": "(989) 821-0532",
+                    "email": "Vandana@payfave.io"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1945\",\n      \"firstName\": \"Vandana\",\n      \"lastName\": \"Jaguri\",\n      \"token\": null,\n      \"userId\": 229,\n+     \"visitorId\": null,\n      \"voiceId\": \"1945\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            },
+            {
+              "matcherResult": {
+                "actual": {
+                  "details": null,
+                  "data": {
+                    "userId": 231,
+                    "firstName": "Vandu",
+                    "lastName": "Jagu",
+                    "voiceId": "1947",
+                    "faceId": "1947",
+                    "token": null,
+                    "contactNo": "(262) 662-7272",
+                    "email": "Vandu@gmail.com",
+                    "visitorId": null
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "expected": {
+                  "details": null,
+                  "data": {
+                    "userId": 231,
+                    "firstName": "Vandu",
+                    "lastName": "Jagu",
+                    "voiceId": "1947",
+                    "faceId": "1947",
+                    "token": null,
+                    "contactNo": "(262) 662-7272",
+                    "email": "Vandu@gmail.com"
+                  },
+                  "success": true,
+                  "successMessage": "User Details displayed successfully !",
+                  "errorMessage": null,
+                  "exceptionMessage": null
+                },
+                "message": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1947\",\n      \"firstName\": \"Vandu\",\n      \"lastName\": \"Jagu\",\n      \"token\": null,\n      \"userId\": 231,\n+     \"visitorId\": null,\n      \"voiceId\": \"1947\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,",
+                "name": "toEqual",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1792\",\n      \"firstName\": \"sd\",\n      \"lastName\": \"sd\",\n      \"token\": null,\n      \"userId\": 221,\n+     \"visitorId\": null,\n      \"voiceId\": \"1792\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1945\",\n      \"firstName\": \"Vandana\",\n      \"lastName\": \"Jaguri\",\n      \"token\": null,\n      \"userId\": 229,\n+     \"visitorId\": null,\n      \"voiceId\": \"1945\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+            "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \"faceId\": \"1947\",\n      \"firstName\": \"Vandu\",\n      \"lastName\": \"Jagu\",\n      \"token\": null,\n      \"userId\": 231,\n+     \"visitorId\": null,\n      \"voiceId\": \"1947\",\n    },\n    \"details\": null,\n    \"errorMessage\": null,\n    \"exceptionMessage\": null,\n    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33\n    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)\n    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)\n    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+          ],
           "fullName": "Route /Shipping Negative Test Cases GET /Shipping?visitorId=1 Should return no data found after sending invalid FaceId.",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Should return no data found after sending invalid FaceId."
         }
       ],
-      "failureMessage": null
+      "failureMessage": "  ● Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1792\",\n          \"firstName\": \"sd\",\n          \"lastName\": \"sd\",\n          \"token\": null,\n          \"userId\": 221,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1792\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1945\",\n          \"firstName\": \"Vandana\",\n          \"lastName\": \"Jaguri\",\n          \"token\": null,\n          \"userId\": 229,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1945\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n\n  ● Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \"faceId\": \"1947\",\n          \"firstName\": \"Vandu\",\n          \"lastName\": \"Jagu\",\n          \"token\": null,\n          \"userId\": 231,\n    +     \"visitorId\": null,\n          \"voiceId\": \"1947\",\n        },\n        \"details\": null,\n        \"errorMessage\": null,\n        \"exceptionMessage\": null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    > 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src/user.route.spec.ts:46:33\n      at step (src/user.route.spec.ts:33:23)\n      at Object.next (src/user.route.spec.ts:14:53)\n      at fulfilled (src/user.route.spec.ts:5:58)\n"
     }
   ],
   "wasInterrupted": false

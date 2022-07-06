@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Tests" tests="13" failures="1" errors="0" time="44.238">
-  <testsuite name="src/ws/winktoken.route.spec.ts" errors="0" failures="1" skipped="9" timestamp="2022-06-29T16:12:09" time="42.692" tests="10">
+<testsuites name="Tests" tests="13" failures="3" errors="0" time="16.805">
+  <testsuite name="src/ws/winktoken.route.spec.ts" errors="0" failures="1" skipped="9" timestamp="2022-07-06T19:03:46" time="14.14" tests="10">
     <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." time="0">
       <skipped/>
     </testcase>
@@ -10,19 +10,14 @@
     <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." time="0">
       <skipped/>
     </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." time="40.003">
-      <failure>Error: thrown: &quot;Exceeded timeout of 40000 ms for a test.
-Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.&quot;
-    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:148:16
-    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)
-    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)
-    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:55:9
-    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)
-    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)
-    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:54:5
-    at _dispatchDescribe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:105:26)
-    at describe (/home/vsts/work/1/s/node_modules/jest-circus/build/index.js:60:5)
-    at Object.&lt;anonymous&gt; (/home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:17:1)</failure>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." time="10.857">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;end_session&quot;
+Received: undefined
+    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:170:47
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
     <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." time="0">
       <skipped/>
@@ -43,14 +38,234 @@ Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long
       <skipped/>
     </testcase>
   </testsuite>
-  <testsuite name="src/user.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-06-29T16:12:52" time="1.175" tests="2">
-    <testcase classname="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." name="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." time="0.015">
+  <testsuite name="src/user.route.spec.ts" errors="0" failures="1" skipped="0" timestamp="2022-07-06T19:04:01" time="2.113" tests="2">
+    <testcase classname="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." name="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." time="0.035">
     </testcase>
-    <testcase classname="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." name="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." time="0.167">
+    <testcase classname="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." name="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." time="0.304">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1782&quot;,
+      &quot;firstName&quot;: &quot;Franco&quot;,
+      &quot;lastName&quot;: &quot;Soler&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 218,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1782&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1975&quot;,
+      &quot;firstName&quot;: &quot;Leonarro&quot;,
+      &quot;lastName&quot;: &quot;Reyes&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 235,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1795&quot;,
+      &quot;firstName&quot;: &quot;Matias&quot;,
+      &quot;lastName&quot;: &quot;Magni&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 223,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1795&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1786&quot;,
+      &quot;firstName&quot;: &quot;Leo&quot;,
+      &quot;lastName&quot;: &quot;NArdo&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 220,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1786&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1949&quot;,
+      &quot;firstName&quot;: &quot;Vrunda&quot;,
+      &quot;lastName&quot;: &quot;Patel&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 233,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1949&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1946&quot;,
+      &quot;firstName&quot;: &quot;V&quot;,
+      &quot;lastName&quot;: &quot;J&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 230,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1946&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1771&quot;,
+      &quot;firstName&quot;: &quot;Geeta &quot;,
+      &quot;lastName&quot;: &quot;Gupta&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 216,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1771&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="src/shipping.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-06-29T16:12:53" time="0.283" tests="1">
-    <testcase classname="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." name="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." time="0.073">
+  <testsuite name="src/shipping.route.spec.ts" errors="0" failures="1" skipped="0" timestamp="2022-07-06T19:04:03" time="0.452" tests="1">
+    <testcase classname="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." name="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." time="0.178">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1792&quot;,
+      &quot;firstName&quot;: &quot;sd&quot;,
+      &quot;lastName&quot;: &quot;sd&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 221,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1792&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1945&quot;,
+      &quot;firstName&quot;: &quot;Vandana&quot;,
+      &quot;lastName&quot;: &quot;Jaguri&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 229,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1945&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -5,10 +5,11 @@
+      &quot;faceId&quot;: &quot;1947&quot;,
+      &quot;firstName&quot;: &quot;Vandu&quot;,
+      &quot;lastName&quot;: &quot;Jagu&quot;,
+      &quot;token&quot;: null,
+      &quot;userId&quot;: 231,
++     &quot;visitorId&quot;: null,
+      &quot;voiceId&quot;: &quot;1947&quot;,
+    },
+    &quot;details&quot;: null,
+    &quot;errorMessage&quot;: null,
+    &quot;exceptionMessage&quot;: null,
+    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
+    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
+    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
+    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
   </testsuite>
 </testsuites>
