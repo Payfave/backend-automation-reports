@@ -1,271 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Tests" tests="13" failures="3" errors="0" time="16.805">
-  <testsuite name="src/ws/winktoken.route.spec.ts" errors="0" failures="1" skipped="9" timestamp="2022-07-06T19:03:46" time="14.14" tests="10">
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." time="0">
-      <skipped/>
+<testsuites name="Tests" tests="16" failures="6" errors="0" time="67.756">
+  <testsuite name="src/ws/winktoken.route.spec.ts" errors="0" failures="6" skipped="0" timestamp="2022-07-08T19:24:09" time="65.547" tests="13">
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face and audio correctly." time="0.048">
     </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." time="0">
-      <skipped/>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 0 after sending face only correctly." time="1.812">
+      <failure>Error: Expected message &quot;&quot;, got &quot;{\&quot;errorSymbio\&quot;:\&quot;We detected an error in Symbio:  - Audio extraction failure\&quot;}&quot;
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:174:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." time="10.857">
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8." time="19.101">
+      <failure>Error: expect(received).not.toBeUndefined()
+
+Received: undefined
+    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:84:61
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: expect(received).not.toBeUndefined()
+
+Received: undefined
+    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:84:61
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-Expected: &quot;end_session&quot;
+Expected: &quot;62&quot;
 Received: undefined
-    at /home/vsts/work/1/s/src/ws/winktoken.route.spec.ts:170:47
+    at expectVeryLowFeatureQualityMsg (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:12:25)
     at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0">
-      <skipped/>
-    </testcase>
-  </testsuite>
-  <testsuite name="src/user.route.spec.ts" errors="0" failures="1" skipped="0" timestamp="2022-07-06T19:04:01" time="2.113" tests="2">
-    <testcase classname="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." name="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." time="0.035">
-    </testcase>
-    <testcase classname="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." name="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." time="0.304">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 10 after sending face and audio with quality less than 0.5 and no device." time="1.787">
+      <failure>Error: expect(received).toMatchObject(expected)
 
-- Expected  - 0
-+ Received  + 1
+- Expected  - 2
++ Received  + 2
 
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1782&quot;,
-      &quot;firstName&quot;: &quot;Franco&quot;,
-      &quot;lastName&quot;: &quot;Soler&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 218,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1782&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+  Object {
+-   &quot;code&quot;: &quot;21, 62&quot;,
+-   &quot;message&quot;: &quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.&quot;,
++   &quot;status&quot;: &quot;error&quot;,
++   &quot;status_message&quot;: &quot;Failure to read video file.&quot;,
+  }
+    at expectNonOptimalFacePoseWarning (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:57:20)
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device." time="0.937">
+      <failure>Error: expect(received).toMatchObject(expected)
 
-- Expected  - 0
-+ Received  + 1
+- Expected  - 2
++ Received  + 2
 
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1975&quot;,
-      &quot;firstName&quot;: &quot;Leonarro&quot;,
-      &quot;lastName&quot;: &quot;Reyes&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 235,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+  Object {
+-   &quot;code&quot;: &quot;21, 62&quot;,
+-   &quot;message&quot;: &quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.&quot;,
++   &quot;status&quot;: &quot;error&quot;,
++   &quot;status_message&quot;: &quot;Failure to read video file.&quot;,
+  }
+    at expectNonOptimalFacePoseWarning (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:57:20)
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8." time="7.261">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1795&quot;,
-      &quot;firstName&quot;: &quot;Matias&quot;,
-      &quot;lastName&quot;: &quot;Magni&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 223,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1795&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+Expected: &quot;62&quot;
+Received: undefined
+    at expectVeryLowFeatureQualityMsg (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:12:25)
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio." name="Route /ws_winktoken › Positive Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio." time="7.292">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1786&quot;,
-      &quot;firstName&quot;: &quot;Leo&quot;,
-      &quot;lastName&quot;: &quot;NArdo&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 220,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1786&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
+Expected: &quot;62&quot;
+Received: undefined
+    at expectVeryLowFeatureQualityMsg (/home/vsts/work/1/s/src/utils/symbioVerifications.ts:12:25)
+    at Object.expectMessage (/home/vsts/work/1/s/node_modules/superwstest/build/superwstest.js:169:22)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1949&quot;,
-      &quot;firstName&quot;: &quot;Vrunda&quot;,
-      &quot;lastName&quot;: &quot;Patel&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 233,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1949&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1946&quot;,
-      &quot;firstName&quot;: &quot;V&quot;,
-      &quot;lastName&quot;: &quot;J&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 230,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1946&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1771&quot;,
-      &quot;firstName&quot;: &quot;Geeta &quot;,
-      &quot;lastName&quot;: &quot;Gupta&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 216,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1771&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0.782">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/true-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." time="12.723">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0.782">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/0/true/true-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." time="7.984">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;Failure to read video file.&quot; error message after sending invalid face and audio data." time="0.65">
+    </testcase>
+    <testcase classname="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." name="Route /ws_winktoken › Negative Test Cases › WS wss://app-payfaveuserservice-dev-001.azurewebsites.net/ws_winktoken/123/true/false-Should return &quot;user not found to authenticate&quot; message after sending face and audio data with non optimal face position." time="1.525">
     </testcase>
   </testsuite>
-  <testsuite name="src/shipping.route.spec.ts" errors="0" failures="1" skipped="0" timestamp="2022-07-06T19:04:03" time="0.452" tests="1">
-    <testcase classname="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." name="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." time="0.178">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1792&quot;,
-      &quot;firstName&quot;: &quot;sd&quot;,
-      &quot;lastName&quot;: &quot;sd&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 221,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1792&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1945&quot;,
-      &quot;firstName&quot;: &quot;Vandana&quot;,
-      &quot;lastName&quot;: &quot;Jaguri&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 229,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1945&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 1
-
-@@ -5,10 +5,11 @@
-      &quot;faceId&quot;: &quot;1947&quot;,
-      &quot;firstName&quot;: &quot;Vandu&quot;,
-      &quot;lastName&quot;: &quot;Jagu&quot;,
-      &quot;token&quot;: null,
-      &quot;userId&quot;: 231,
-+     &quot;visitorId&quot;: null,
-      &quot;voiceId&quot;: &quot;1947&quot;,
-    },
-    &quot;details&quot;: null,
-    &quot;errorMessage&quot;: null,
-    &quot;exceptionMessage&quot;: null,
-    at /home/vsts/work/1/s/src/user.route.spec.ts:46:33
-    at step (/home/vsts/work/1/s/src/user.route.spec.ts:33:23)
-    at Object.next (/home/vsts/work/1/s/src/user.route.spec.ts:14:53)
-    at fulfilled (/home/vsts/work/1/s/src/user.route.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+  <testsuite name="src/user.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-07-08T19:25:14" time="1.748" tests="2">
+    <testcase classname="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." name="Route /User › Positive Test Cases › GET /User?FaceId={FaceId}-Should return valid data after sending valid Face IDs." time="0.024">
+    </testcase>
+    <testcase classname="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." name="Route /User › Negative Test Cases › GET /User?FaceId=1-Should return no data found after sending invalid Face ID." time="0.139">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/shipping.route.spec.ts" errors="0" failures="0" skipped="0" timestamp="2022-07-08T19:25:16" time="0.367" tests="1">
+    <testcase classname="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." name="Route /Shipping › Negative Test Cases › GET /Shipping?visitorId=1-Should return no data found after sending invalid FaceId." time="0.148">
     </testcase>
   </testsuite>
 </testsuites>

@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">0 passed, 3 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">2 passed, 3 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">1 passed, 13 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">10 passed, 16 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -125,16 +125,16 @@
 }</div>
         <div id="accordion">
             <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 3,
-  &quot;numFailedTests&quot;: 3,
-  &quot;numPassedTestSuites&quot;: 0,
-  &quot;numPassedTests&quot;: 1,
+  &quot;numFailedTestSuites&quot;: 1,
+  &quot;numFailedTests&quot;: 6,
+  &quot;numPassedTestSuites&quot;: 2,
+  &quot;numPassedTests&quot;: 10,
   &quot;numPendingTestSuites&quot;: 0,
-  &quot;numPendingTests&quot;: 9,
+  &quot;numPendingTests&quot;: 0,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 3,
-  &quot;numTotalTests&quot;: 13,
+  &quot;numTotalTests&quot;: 16,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -152,21 +152,21 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1657134226792,
+  &quot;startTime&quot;: 1657308249080,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 0,
-      &quot;numPendingTests&quot;: 9,
+      &quot;numFailingTests&quot;: 6,
+      &quot;numPassingTests&quot;: 7,
+      &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1657134241005,
-        &quot;runtime&quot;: 14140,
+        &quot;end&quot;: 1657308314695,
+        &quot;runtime&quot;: 65547,
         &quot;slow&quot;: true,
-        &quot;start&quot;: 1657134226865
+        &quot;start&quot;: 1657308249148
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -186,7 +186,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
+          &quot;duration&quot;: 48,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 0 after sending face and audio correctly.&quot;,
@@ -194,7 +194,7 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Should return type 0 after sending face and audio correctly.&quot;
         },
         {
@@ -203,15 +203,19 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 1812,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: Expected message \&quot;\&quot;, got \&quot;{\\\&quot;errorSymbio\\\&quot;:\\\&quot;We detected an error in Symbio:  - Audio extraction failure\\\&quot;}\&quot;\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:174:13)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+          ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 0 after sending face only correctly.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Should return type 0 after sending face only correctly.&quot;
         },
         {
@@ -220,15 +224,40 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 19101,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;message&quot;: &quot;expect(received).not.toBeUndefined()\n\nReceived: undefined&quot;,
+                &quot;pass&quot;: true
+              }
+            },
+            {
+              &quot;matcherResult&quot;: {
+                &quot;message&quot;: &quot;expect(received).not.toBeUndefined()\n\nReceived: undefined&quot;,
+                &quot;pass&quot;: true
+              }
+            },
+            {
+              &quot;matcherResult&quot;: {
+                &quot;expected&quot;: &quot;62&quot;,
+                &quot;message&quot;: &quot;expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined&quot;,
+                &quot;name&quot;: &quot;toBe&quot;,
+                &quot;pass&quot;: false
+              }
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: expect(received).not.toBeUndefined()\n\nReceived: undefined\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;ws&#x2F;winktoken.route.spec.ts:84:61\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
+            &quot;Error: expect(received).not.toBeUndefined()\n\nReceived: undefined\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;ws&#x2F;winktoken.route.spec.ts:84:61\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
+            &quot;Error: expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined\n    at expectVeryLowFeatureQualityMsg (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+          ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.&quot;
         },
         {
@@ -237,19 +266,17 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: 10857,
+          &quot;duration&quot;: 1787,
           &quot;failureDetails&quot;: [
             {
               &quot;matcherResult&quot;: {
-                &quot;expected&quot;: &quot;end_session&quot;,
-                &quot;message&quot;: &quot;expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;end_session\&quot;\nReceived: undefined&quot;,
-                &quot;name&quot;: &quot;toBe&quot;,
+                &quot;message&quot;: &quot;expect(received).toMatchObject(expected)\n\n- Expected  - 2\n+ Received  + 2\n\n  Object {\n-   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n-   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n+   \&quot;status\&quot;: \&quot;error\&quot;,\n+   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n  }&quot;,
                 &quot;pass&quot;: false
               }
             }
           ],
           &quot;failureMessages&quot;: [
-            &quot;Error: expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;end_session\&quot;\nReceived: undefined\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;ws&#x2F;winktoken.route.spec.ts:170:47\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+            &quot;Error: expect(received).toMatchObject(expected)\n\n- Expected  - 2\n+ Received  + 2\n\n  Object {\n-   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n-   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n+   \&quot;status\&quot;: \&quot;error\&quot;,\n+   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n  }\n    at expectNonOptimalFacePoseWarning (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;utils&#x2F;symbioVerifications.ts:57:20)\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
           ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 10 after sending face and audio with quality less than 0.5 and no device.&quot;,
           &quot;invocations&quot;: 1,
@@ -265,15 +292,24 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 937,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;message&quot;: &quot;expect(received).toMatchObject(expected)\n\n- Expected  - 2\n+ Received  + 2\n\n  Object {\n-   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n-   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n+   \&quot;status\&quot;: \&quot;error\&quot;,\n+   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n  }&quot;,
+                &quot;pass&quot;: false
+              }
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: expect(received).toMatchObject(expected)\n\n- Expected  - 2\n+ Received  + 2\n\n  Object {\n-   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n-   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n+   \&quot;status\&quot;: \&quot;error\&quot;,\n+   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n  }\n    at expectNonOptimalFacePoseWarning (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;utils&#x2F;symbioVerifications.ts:57:20)\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+          ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device.&quot;
         },
         {
@@ -282,15 +318,26 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 7261,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;expected&quot;: &quot;62&quot;,
+                &quot;message&quot;: &quot;expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined&quot;,
+                &quot;name&quot;: &quot;toBe&quot;,
+                &quot;pass&quot;: false
+              }
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined\n    at expectVeryLowFeatureQualityMsg (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+          ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.&quot;
         },
         {
@@ -299,15 +346,26 @@
             &quot;Positive Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
           ],
-          &quot;duration&quot;: null,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 7292,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;expected&quot;: &quot;62&quot;,
+                &quot;message&quot;: &quot;expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined&quot;,
+                &quot;name&quot;: &quot;toBe&quot;,
+                &quot;pass&quot;: false
+              }
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\nExpected: \&quot;62\&quot;\nReceived: undefined\n    at expectVeryLowFeatureQualityMsg (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n    at Object.expectMessage (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
+          ],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Positive Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.&quot;
         },
         {
@@ -316,7 +374,7 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
+          &quot;duration&quot;: 782,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
@@ -324,7 +382,41 @@
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: 12723,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
+          ],
+          &quot;duration&quot;: 782,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
         },
         {
@@ -333,15 +425,32 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true&quot;
           ],
-          &quot;duration&quot;: null,
+          &quot;duration&quot;: 7984,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Route &#x2F;ws_winktoken&quot;,
+            &quot;Negative Test Cases&quot;,
+            &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
+          ],
+          &quot;duration&quot;: 650,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
         },
         {
@@ -350,32 +459,32 @@
             &quot;Negative Test Cases&quot;,
             &quot;WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false&quot;
           ],
-          &quot;duration&quot;: null,
+          &quot;duration&quot;: 1525,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;,
+          &quot;fullName&quot;: &quot;Route &#x2F;ws_winktoken Negative Test Cases WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;pending&quot;,
-          &quot;title&quot;: &quot;Should return \&quot;Failure to read video file.\&quot; error message after sending invalid face and audio data.&quot;
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;Should return \&quot;user not found to authenticate\&quot; message after sending face and audio data with non optimal face position.&quot;
         }
       ],
-      &quot;failureMessage&quot;: &quot;  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\n    Expected: \&quot;end_session\&quot;\n    Received: undefined\n\n      168 |                     })\n      169 |                     .expectJson((actual: any) &#x3D;&gt; {\n    &gt; 170 |                         expect(actual.action).toBe(&#39;end_session&#39;);\n          |                                               ^\n      171 |                         expect(actual.status).toBe(&#39;success&#39;);\n      172 |                     })\n      173 |                     .expectJson({ type: 3 })\n\n      at src&#x2F;ws&#x2F;winktoken.route.spec.ts:170:47\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n&quot;
+      &quot;failureMessage&quot;: &quot;  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 0 after sending face only correctly.\n\n    Expected message \&quot;\&quot;, got \&quot;{\\\&quot;errorSymbio\\\&quot;:\\\&quot;We detected an error in Symbio:  - Audio extraction failure\\\&quot;}\&quot;\n\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:174:13)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).not.toBeUndefined()\n\n    Received: undefined\n\n      82 |                             expect(actual.result_type).toBe(&#39;voice_result&#39;);\n      83 |                             expect(actual.result_data).not.toBeNull();\n    &gt; 84 |                             expect(actual.data_quality).not.toBeUndefined();\n         |                                                             ^\n      85 |                         })\n      86 |                         .expectJson((actual: any) &#x3D;&gt; {\n      87 |                             expect(actual.action).not.toBe(&#39;add_data_to_selected_id&#39;);\n\n      at src&#x2F;ws&#x2F;winktoken.route.spec.ts:84:61\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).not.toBeUndefined()\n\n    Received: undefined\n\n      82 |                             expect(actual.result_type).toBe(&#39;voice_result&#39;);\n      83 |                             expect(actual.result_data).not.toBeNull();\n    &gt; 84 |                             expect(actual.data_quality).not.toBeUndefined();\n         |                                                             ^\n      85 |                         })\n      86 |                         .expectJson((actual: any) &#x3D;&gt; {\n      87 |                             expect(actual.action).not.toBe(&#39;add_data_to_selected_id&#39;);\n\n      at src&#x2F;ws&#x2F;winktoken.route.spec.ts:84:61\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 3 having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\n    Expected: \&quot;62\&quot;\n    Received: undefined\n\n      10 |\n      11 | const expectVeryLowFeatureQualityMsg &#x3D; (actual: any) &#x3D;&gt; {\n    &gt; 12 |     expect(actual.code).toBe(&#39;62&#39;);\n         |                         ^\n      13 |     expect(actual.message).toBe(&#39;Very low feature quality.&#39;);\n      14 | };\n      15 |\n\n      at expectVeryLowFeatureQualityMsg (src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 10 after sending face and audio with quality less than 0.5 and no device.\n\n    expect(received).toMatchObject(expected)\n\n    - Expected  - 2\n    + Received  + 2\n\n      Object {\n    -   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n    -   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n    +   \&quot;status\&quot;: \&quot;error\&quot;,\n    +   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n      }\n\n      55 |\n      56 | const expectNonOptimalFacePoseWarning &#x3D; (actual: any) &#x3D;&gt; {\n    &gt; 57 |     expect(actual).toMatchObject({\n         |                    ^\n      58 |         code: &#39;21, 62&#39;,\n      59 |         message: &#39;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.&#39;,\n      60 |     });\n\n      at expectNonOptimalFacePoseWarning (src&#x2F;utils&#x2F;symbioVerifications.ts:57:20)\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;true › Should return type 3 after sending face and audio with quality less than 0.5 and previously resgistered device.\n\n    expect(received).toMatchObject(expected)\n\n    - Expected  - 2\n    + Received  + 2\n\n      Object {\n    -   \&quot;code\&quot;: \&quot;21, 62\&quot;,\n    -   \&quot;message\&quot;: \&quot;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.\&quot;,\n    +   \&quot;status\&quot;: \&quot;error\&quot;,\n    +   \&quot;status_message\&quot;: \&quot;Failure to read video file.\&quot;,\n      }\n\n      55 |\n      56 | const expectNonOptimalFacePoseWarning &#x3D; (actual: any) &#x3D;&gt; {\n    &gt; 57 |     expect(actual).toMatchObject({\n         |                    ^\n      58 |         code: &#39;21, 62&#39;,\n      59 |         message: &#39;Non-optimal face pose: Profile face detected - Warning: high, Very low feature quality.&#39;,\n      60 |     });\n\n      at expectNonOptimalFacePoseWarning (src&#x2F;utils&#x2F;symbioVerifications.ts:57:20)\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;0&#x2F;true&#x2F;true › Should return type 4 not having a device after sending face and audio with quality between 0.5 and 0.8.\n\n    expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\n    Expected: \&quot;62\&quot;\n    Received: undefined\n\n      10 |\n      11 | const expectVeryLowFeatureQualityMsg &#x3D; (actual: any) &#x3D;&gt; {\n    &gt; 12 |     expect(actual.code).toBe(&#39;62&#39;);\n         |                         ^\n      13 |     expect(actual.message).toBe(&#39;Very low feature quality.&#39;);\n      14 | };\n      15 |\n\n      at expectVeryLowFeatureQualityMsg (src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n\n  ● Route &#x2F;ws_winktoken › Positive Test Cases › WS wss:&#x2F;&#x2F;app-payfaveuserservice-dev-001.azurewebsites.net&#x2F;ws_winktoken&#x2F;123&#x2F;true&#x2F;false › Should return type 10 after sending face with quality between 0.5 and 0.8 and no audio.\n\n    expect(received).toBe(expected) &#x2F;&#x2F; Object.is equality\n\n    Expected: \&quot;62\&quot;\n    Received: undefined\n\n      10 |\n      11 | const expectVeryLowFeatureQualityMsg &#x3D; (actual: any) &#x3D;&gt; {\n    &gt; 12 |     expect(actual.code).toBe(&#39;62&#39;);\n         |                         ^\n      13 |     expect(actual.message).toBe(&#39;Very low feature quality.&#39;);\n      14 | };\n      15 |\n\n      at expectVeryLowFeatureQualityMsg (src&#x2F;utils&#x2F;symbioVerifications.ts:12:25)\n      at Object.expectMessage (node_modules&#x2F;superwstest&#x2F;build&#x2F;superwstest.js:169:22)\n&quot;
     },
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 1,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 2,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1657134243130,
-        &quot;runtime&quot;: 2113,
+        &quot;end&quot;: 1657308316458,
+        &quot;runtime&quot;: 1748,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1657134241017
+        &quot;start&quot;: 1657308314710
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -395,7 +504,7 @@
             &quot;Positive Test Cases&quot;,
             &quot;GET &#x2F;User?FaceId&#x3D;{FaceId}&quot;
           ],
-          &quot;duration&quot;: 35,
+          &quot;duration&quot;: 24,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;User Positive Test Cases GET &#x2F;User?FaceId&#x3D;{FaceId} Should return valid data after sending valid Face IDs.&quot;,
@@ -412,335 +521,32 @@
             &quot;Negative Test Cases&quot;,
             &quot;GET &#x2F;User?FaceId&#x3D;1&quot;
           ],
-          &quot;duration&quot;: 304,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 218,
-                    &quot;firstName&quot;: &quot;Franco&quot;,
-                    &quot;lastName&quot;: &quot;Soler&quot;,
-                    &quot;voiceId&quot;: &quot;1782&quot;,
-                    &quot;faceId&quot;: &quot;1782&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(123) 123-1233&quot;,
-                    &quot;email&quot;: &quot;francosoler@email.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 218,
-                    &quot;firstName&quot;: &quot;Franco&quot;,
-                    &quot;lastName&quot;: &quot;Soler&quot;,
-                    &quot;voiceId&quot;: &quot;1782&quot;,
-                    &quot;faceId&quot;: &quot;1782&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(123) 123-1233&quot;,
-                    &quot;email&quot;: &quot;francosoler@email.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1782\&quot;,\n      \&quot;firstName\&quot;: \&quot;Franco\&quot;,\n      \&quot;lastName\&quot;: \&quot;Soler\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 218,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1782\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 235,
-                    &quot;firstName&quot;: &quot;Leonarro&quot;,
-                    &quot;lastName&quot;: &quot;Reyes&quot;,
-                    &quot;voiceId&quot;: &quot;&quot;,
-                    &quot;faceId&quot;: &quot;1975&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-1212&quot;,
-                    &quot;email&quot;: &quot;123@gmail.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 235,
-                    &quot;firstName&quot;: &quot;Leonarro&quot;,
-                    &quot;lastName&quot;: &quot;Reyes&quot;,
-                    &quot;voiceId&quot;: &quot;&quot;,
-                    &quot;faceId&quot;: &quot;1975&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-1212&quot;,
-                    &quot;email&quot;: &quot;123@gmail.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1975\&quot;,\n      \&quot;firstName\&quot;: \&quot;Leonarro\&quot;,\n      \&quot;lastName\&quot;: \&quot;Reyes\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 235,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 223,
-                    &quot;firstName&quot;: &quot;Matias&quot;,
-                    &quot;lastName&quot;: &quot;Magni&quot;,
-                    &quot;voiceId&quot;: &quot;1795&quot;,
-                    &quot;faceId&quot;: &quot;1795&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(261) 253-5890&quot;,
-                    &quot;email&quot;: &quot;matias+test@wink.cloud&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 223,
-                    &quot;firstName&quot;: &quot;Matias&quot;,
-                    &quot;lastName&quot;: &quot;Magni&quot;,
-                    &quot;voiceId&quot;: &quot;1795&quot;,
-                    &quot;faceId&quot;: &quot;1795&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(261) 253-5890&quot;,
-                    &quot;email&quot;: &quot;matias+test@wink.cloud&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1795\&quot;,\n      \&quot;firstName\&quot;: \&quot;Matias\&quot;,\n      \&quot;lastName\&quot;: \&quot;Magni\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 223,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1795\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 220,
-                    &quot;firstName&quot;: &quot;Leo&quot;,
-                    &quot;lastName&quot;: &quot;NArdo&quot;,
-                    &quot;voiceId&quot;: &quot;1786&quot;,
-                    &quot;faceId&quot;: &quot;1786&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-1212&quot;,
-                    &quot;email&quot;: &quot;leo@reyes.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 220,
-                    &quot;firstName&quot;: &quot;Leo&quot;,
-                    &quot;lastName&quot;: &quot;NArdo&quot;,
-                    &quot;voiceId&quot;: &quot;1786&quot;,
-                    &quot;faceId&quot;: &quot;1786&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-1212&quot;,
-                    &quot;email&quot;: &quot;leo@reyes.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1786\&quot;,\n      \&quot;firstName\&quot;: \&quot;Leo\&quot;,\n      \&quot;lastName\&quot;: \&quot;NArdo\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 220,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1786\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 233,
-                    &quot;firstName&quot;: &quot;Vrunda&quot;,
-                    &quot;lastName&quot;: &quot;Patel&quot;,
-                    &quot;voiceId&quot;: &quot;1949&quot;,
-                    &quot;faceId&quot;: &quot;1949&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(887) 378-3838&quot;,
-                    &quot;email&quot;: &quot;Vrunda@gmail.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 233,
-                    &quot;firstName&quot;: &quot;Vrunda&quot;,
-                    &quot;lastName&quot;: &quot;Patel&quot;,
-                    &quot;voiceId&quot;: &quot;1949&quot;,
-                    &quot;faceId&quot;: &quot;1949&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(887) 378-3838&quot;,
-                    &quot;email&quot;: &quot;Vrunda@gmail.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1949\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vrunda\&quot;,\n      \&quot;lastName\&quot;: \&quot;Patel\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 233,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1949\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 230,
-                    &quot;firstName&quot;: &quot;V&quot;,
-                    &quot;lastName&quot;: &quot;J&quot;,
-                    &quot;voiceId&quot;: &quot;1946&quot;,
-                    &quot;faceId&quot;: &quot;1946&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(988) 737-3883&quot;,
-                    &quot;email&quot;: &quot;V@gmail.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 230,
-                    &quot;firstName&quot;: &quot;V&quot;,
-                    &quot;lastName&quot;: &quot;J&quot;,
-                    &quot;voiceId&quot;: &quot;1946&quot;,
-                    &quot;faceId&quot;: &quot;1946&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(988) 737-3883&quot;,
-                    &quot;email&quot;: &quot;V@gmail.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1946\&quot;,\n      \&quot;firstName\&quot;: \&quot;V\&quot;,\n      \&quot;lastName\&quot;: \&quot;J\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 230,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1946\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 216,
-                    &quot;firstName&quot;: &quot;Geeta &quot;,
-                    &quot;lastName&quot;: &quot;Gupta&quot;,
-                    &quot;voiceId&quot;: &quot;1771&quot;,
-                    &quot;faceId&quot;: &quot;1771&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(981) 073-955&quot;,
-                    &quot;email&quot;: &quot;geeta3011@gmail.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 216,
-                    &quot;firstName&quot;: &quot;Geeta &quot;,
-                    &quot;lastName&quot;: &quot;Gupta&quot;,
-                    &quot;voiceId&quot;: &quot;1771&quot;,
-                    &quot;faceId&quot;: &quot;1771&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(981) 073-955&quot;,
-                    &quot;email&quot;: &quot;geeta3011@gmail.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1771\&quot;,\n      \&quot;firstName\&quot;: \&quot;Geeta \&quot;,\n      \&quot;lastName\&quot;: \&quot;Gupta\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 216,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1771\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1782\&quot;,\n      \&quot;firstName\&quot;: \&quot;Franco\&quot;,\n      \&quot;lastName\&quot;: \&quot;Soler\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 218,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1782\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1975\&quot;,\n      \&quot;firstName\&quot;: \&quot;Leonarro\&quot;,\n      \&quot;lastName\&quot;: \&quot;Reyes\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 235,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1795\&quot;,\n      \&quot;firstName\&quot;: \&quot;Matias\&quot;,\n      \&quot;lastName\&quot;: \&quot;Magni\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 223,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1795\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1786\&quot;,\n      \&quot;firstName\&quot;: \&quot;Leo\&quot;,\n      \&quot;lastName\&quot;: \&quot;NArdo\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 220,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1786\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1949\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vrunda\&quot;,\n      \&quot;lastName\&quot;: \&quot;Patel\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 233,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1949\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1946\&quot;,\n      \&quot;firstName\&quot;: \&quot;V\&quot;,\n      \&quot;lastName\&quot;: \&quot;J\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 230,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1946\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1771\&quot;,\n      \&quot;firstName\&quot;: \&quot;Geeta \&quot;,\n      \&quot;lastName\&quot;: \&quot;Gupta\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 216,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1771\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
-          ],
+          &quot;duration&quot;: 139,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;User Negative Test Cases GET &#x2F;User?FaceId&#x3D;1 Should return no data found after sending invalid Face ID.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Should return no data found after sending invalid Face ID.&quot;
         }
       ],
-      &quot;failureMessage&quot;: &quot;  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1782\&quot;,\n          \&quot;firstName\&quot;: \&quot;Franco\&quot;,\n          \&quot;lastName\&quot;: \&quot;Soler\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 218,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1782\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1975\&quot;,\n          \&quot;firstName\&quot;: \&quot;Leonarro\&quot;,\n          \&quot;lastName\&quot;: \&quot;Reyes\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 235,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1795\&quot;,\n          \&quot;firstName\&quot;: \&quot;Matias\&quot;,\n          \&quot;lastName\&quot;: \&quot;Magni\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 223,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1795\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1786\&quot;,\n          \&quot;firstName\&quot;: \&quot;Leo\&quot;,\n          \&quot;lastName\&quot;: \&quot;NArdo\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 220,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1786\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1949\&quot;,\n          \&quot;firstName\&quot;: \&quot;Vrunda\&quot;,\n          \&quot;lastName\&quot;: \&quot;Patel\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 233,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1949\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1946\&quot;,\n          \&quot;firstName\&quot;: \&quot;V\&quot;,\n          \&quot;lastName\&quot;: \&quot;J\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 230,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1946\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;User › Negative Test Cases › GET &#x2F;User?FaceId&#x3D;1 › Should return no data found after sending invalid Face ID.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1771\&quot;,\n          \&quot;firstName\&quot;: \&quot;Geeta \&quot;,\n          \&quot;lastName\&quot;: \&quot;Gupta\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 216,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1771\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n&quot;
+      &quot;failureMessage&quot;: null
     },
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 1,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1657134243588,
-        &quot;runtime&quot;: 452,
+        &quot;end&quot;: 1657308316832,
+        &quot;runtime&quot;: 367,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1657134243136
+        &quot;start&quot;: 1657308316465
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -760,150 +566,19 @@
             &quot;Negative Test Cases&quot;,
             &quot;GET &#x2F;Shipping?visitorId&#x3D;1&quot;
           ],
-          &quot;duration&quot;: 178,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 221,
-                    &quot;firstName&quot;: &quot;sd&quot;,
-                    &quot;lastName&quot;: &quot;sd&quot;,
-                    &quot;voiceId&quot;: &quot;1792&quot;,
-                    &quot;faceId&quot;: &quot;1792&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-12&quot;,
-                    &quot;email&quot;: &quot;sd@sas.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 221,
-                    &quot;firstName&quot;: &quot;sd&quot;,
-                    &quot;lastName&quot;: &quot;sd&quot;,
-                    &quot;voiceId&quot;: &quot;1792&quot;,
-                    &quot;faceId&quot;: &quot;1792&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(121) 212-12&quot;,
-                    &quot;email&quot;: &quot;sd@sas.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1792\&quot;,\n      \&quot;firstName\&quot;: \&quot;sd\&quot;,\n      \&quot;lastName\&quot;: \&quot;sd\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 221,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1792\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 229,
-                    &quot;firstName&quot;: &quot;Vandana&quot;,
-                    &quot;lastName&quot;: &quot;Jaguri&quot;,
-                    &quot;voiceId&quot;: &quot;1945&quot;,
-                    &quot;faceId&quot;: &quot;1945&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(989) 821-0532&quot;,
-                    &quot;email&quot;: &quot;Vandana@payfave.io&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 229,
-                    &quot;firstName&quot;: &quot;Vandana&quot;,
-                    &quot;lastName&quot;: &quot;Jaguri&quot;,
-                    &quot;voiceId&quot;: &quot;1945&quot;,
-                    &quot;faceId&quot;: &quot;1945&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(989) 821-0532&quot;,
-                    &quot;email&quot;: &quot;Vandana@payfave.io&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1945\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vandana\&quot;,\n      \&quot;lastName\&quot;: \&quot;Jaguri\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 229,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1945\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            },
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 231,
-                    &quot;firstName&quot;: &quot;Vandu&quot;,
-                    &quot;lastName&quot;: &quot;Jagu&quot;,
-                    &quot;voiceId&quot;: &quot;1947&quot;,
-                    &quot;faceId&quot;: &quot;1947&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(262) 662-7272&quot;,
-                    &quot;email&quot;: &quot;Vandu@gmail.com&quot;,
-                    &quot;visitorId&quot;: null
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;expected&quot;: {
-                  &quot;details&quot;: null,
-                  &quot;data&quot;: {
-                    &quot;userId&quot;: 231,
-                    &quot;firstName&quot;: &quot;Vandu&quot;,
-                    &quot;lastName&quot;: &quot;Jagu&quot;,
-                    &quot;voiceId&quot;: &quot;1947&quot;,
-                    &quot;faceId&quot;: &quot;1947&quot;,
-                    &quot;token&quot;: null,
-                    &quot;contactNo&quot;: &quot;(262) 662-7272&quot;,
-                    &quot;email&quot;: &quot;Vandu@gmail.com&quot;
-                  },
-                  &quot;success&quot;: true,
-                  &quot;successMessage&quot;: &quot;User Details displayed successfully !&quot;,
-                  &quot;errorMessage&quot;: null,
-                  &quot;exceptionMessage&quot;: null
-                },
-                &quot;message&quot;: &quot;expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1947\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vandu\&quot;,\n      \&quot;lastName\&quot;: \&quot;Jagu\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 231,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1947\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,&quot;,
-                &quot;name&quot;: &quot;toEqual&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1792\&quot;,\n      \&quot;firstName\&quot;: \&quot;sd\&quot;,\n      \&quot;lastName\&quot;: \&quot;sd\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 221,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1792\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1945\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vandana\&quot;,\n      \&quot;lastName\&quot;: \&quot;Jaguri\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 229,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1945\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;,
-            &quot;Error: expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n@@ -5,10 +5,11 @@\n      \&quot;faceId\&quot;: \&quot;1947\&quot;,\n      \&quot;firstName\&quot;: \&quot;Vandu\&quot;,\n      \&quot;lastName\&quot;: \&quot;Jagu\&quot;,\n      \&quot;token\&quot;: null,\n      \&quot;userId\&quot;: 231,\n+     \&quot;visitorId\&quot;: null,\n      \&quot;voiceId\&quot;: \&quot;1947\&quot;,\n    },\n    \&quot;details\&quot;: null,\n    \&quot;errorMessage\&quot;: null,\n    \&quot;exceptionMessage\&quot;: null,\n    at &#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:46:33\n    at step (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:33:23)\n    at Object.next (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:14:53)\n    at fulfilled (&#x2F;home&#x2F;vsts&#x2F;work&#x2F;1&#x2F;s&#x2F;src&#x2F;user.route.spec.ts:5:58)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:96:5)&quot;
-          ],
+          &quot;duration&quot;: 148,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Route &#x2F;Shipping Negative Test Cases GET &#x2F;Shipping?visitorId&#x3D;1 Should return no data found after sending invalid FaceId.&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Should return no data found after sending invalid FaceId.&quot;
         }
       ],
-      &quot;failureMessage&quot;: &quot;  ● Route &#x2F;Shipping › Negative Test Cases › GET &#x2F;Shipping?visitorId&#x3D;1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1792\&quot;,\n          \&quot;firstName\&quot;: \&quot;sd\&quot;,\n          \&quot;lastName\&quot;: \&quot;sd\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 221,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1792\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;Shipping › Negative Test Cases › GET &#x2F;Shipping?visitorId&#x3D;1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1945\&quot;,\n          \&quot;firstName\&quot;: \&quot;Vandana\&quot;,\n          \&quot;lastName\&quot;: \&quot;Jaguri\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 229,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1945\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n\n  ● Route &#x2F;Shipping › Negative Test Cases › GET &#x2F;Shipping?visitorId&#x3D;1 › Should return no data found after sending invalid FaceId.\n\n    expect(received).toEqual(expected) &#x2F;&#x2F; deep equality\n\n    - Expected  - 0\n    + Received  + 1\n\n    @@ -5,10 +5,11 @@\n          \&quot;faceId\&quot;: \&quot;1947\&quot;,\n          \&quot;firstName\&quot;: \&quot;Vandu\&quot;,\n          \&quot;lastName\&quot;: \&quot;Jagu\&quot;,\n          \&quot;token\&quot;: null,\n          \&quot;userId\&quot;: 231,\n    +     \&quot;visitorId\&quot;: null,\n          \&quot;voiceId\&quot;: \&quot;1947\&quot;,\n        },\n        \&quot;details\&quot;: null,\n        \&quot;errorMessage\&quot;: null,\n        \&quot;exceptionMessage\&quot;: null,\n\n      44 |           expect(response).not.toBeUndefined();\n      45 |           expect(response.status).toBe(200);\n    &gt; 46 |           expect(response.body).toEqual(expected);\n         |                                 ^\n      47 |         });\n      48 |       });\n      49 |     });\n\n      at src&#x2F;user.route.spec.ts:46:33\n      at step (src&#x2F;user.route.spec.ts:33:23)\n      at Object.next (src&#x2F;user.route.spec.ts:14:53)\n      at fulfilled (src&#x2F;user.route.spec.ts:5:58)\n&quot;
+      &quot;failureMessage&quot;: null
     }
   ],
   &quot;wasInterrupted&quot;: false
